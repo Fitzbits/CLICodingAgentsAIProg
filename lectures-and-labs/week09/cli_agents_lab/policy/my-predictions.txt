@@ -1,0 +1,10 @@
+ALLOW git status
+ASK git push
+ASK git push --force origin main
+ASK git -C . push origin main
+ALLOW npm test -- --coverage
+ASK rm -rf build
+ASK python -c "import shutil; shutil.rmtree('src')"
+ASK pytest -q && git push
+DENY cat .env
+DENY git clean -fdx
