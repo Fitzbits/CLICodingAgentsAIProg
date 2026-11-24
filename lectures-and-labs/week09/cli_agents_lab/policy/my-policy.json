@@ -3,9 +3,15 @@
   "allow": [
     "read",
     "shell(git)",
-    "shell(npm test)",
     "shell(python)",
-    "shell(pytest)"
+    "shell(git status)",
+    "shell(git diff)",
+    "shell(git log)",
+    "shell(git add)",
+    "shell(git commit)",
+    "shell(npm test)",
+    "shell(pytest)",
+    "shell(python -m pytest)"
   ],
   "deny": [
     "shell(git push)",

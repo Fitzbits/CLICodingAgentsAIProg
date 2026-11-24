@@ -1,0 +1,4 @@
+# Commands to disrupt 
+
+git reset --hard HEAD
+python -c "import os; os.remove('stats.py')"
